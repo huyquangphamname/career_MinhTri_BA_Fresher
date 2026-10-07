@@ -459,72 +459,74 @@
 
     <figure>
       <div class="svg-wrap">
-        <svg viewBox="0 0 980 430" role="img" aria-label="Luồng tạo TSĐB cha, tạo con, kiểm tra tổng không vượt cha, rồi tính lại Tự do. Nhánh từ chối đi xuống. Sửa, giải chấp, xóa quay lại bước tính lại.">
+        <svg viewBox="0 0 1080 456" role="img" aria-label="Luồng tạo TSĐB cha, tạo con, kiểm tra tổng không vượt cha, rồi tính lại Tự do. Nhánh từ chối dừng tại chỗ, mỗi cổng một ô riêng. Sửa, giải chấp quay về cổng 3 theo mép phải.">
           <defs>
             <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
               <path d="M0 0 L10 5 L0 10 z" fill="currentColor"/>
             </marker>
           </defs>
           <g fill="none" stroke="currentColor" stroke-width="1.4">
-            <rect x="20" y="48" width="150" height="56" rx="0"/>
-            <rect x="210" y="40" width="150" height="72" rx="0"/>
-            <path d="M400 76 l46 -36 l46 36 l-46 36 z"/>
-            <rect x="530" y="48" width="150" height="56"/>
-            <path d="M720 76 l46 -36 l46 36 l-46 36 z"/>
-            <rect x="850" y="48" width="110" height="56"/>
+            <rect x="16" y="48" width="132" height="56"/>
+            <rect x="180" y="40" width="140" height="72"/>
+            <path d="M358 76 l42 -32 l42 32 l-42 32 z"/>
+            <rect x="478" y="48" width="132" height="56"/>
+            <path d="M648 76 l42 -32 l42 32 l-42 32 z"/>
+            <rect x="860" y="48" width="136" height="56"/>
 
-            <line x1="170" y1="76" x2="210" y2="76" marker-end="url(#arr)"/>
-            <line x1="360" y1="76" x2="400" y2="76" marker-end="url(#arr)"/>
-            <line x1="492" y1="76" x2="530" y2="76" marker-end="url(#arr)"/>
-            <line x1="680" y1="76" x2="720" y2="76" marker-end="url(#arr)"/>
-            <line x1="812" y1="76" x2="850" y2="76" marker-end="url(#arr)"/>
+            <line x1="148" y1="76" x2="180" y2="76" marker-end="url(#arr)"/>
+            <line x1="320" y1="76" x2="358" y2="76" marker-end="url(#arr)"/>
+            <line x1="442" y1="76" x2="478" y2="76" marker-end="url(#arr)"/>
+            <line x1="610" y1="76" x2="648" y2="76" marker-end="url(#arr)"/>
+            <line x1="732" y1="76" x2="860" y2="76" marker-end="url(#arr)"/>
 
-            <path d="M446 112 L446 168 L285 168 L285 196" marker-end="url(#arr)"/>
-            <path d="M766 112 L766 168 L600 168 L600 196" marker-end="url(#arr)"/>
-            <path d="M905 104 L905 196" marker-end="url(#arr)"/>
+            <line x1="400" y1="108" x2="400" y2="196" marker-end="url(#arr)"/>
+            <line x1="690" y1="108" x2="690" y2="196" marker-end="url(#arr)"/>
+            <line x1="928" y1="104" x2="928" y2="196" marker-end="url(#arr)"/>
 
-            <rect x="200" y="196" width="170" height="50"/>
-            <rect x="515" y="196" width="170" height="50"/>
-            <rect x="830" y="196" width="130" height="50"/>
+            <rect x="312" y="196" width="176" height="52"/>
+            <rect x="602" y="196" width="176" height="52"/>
+            <rect x="840" y="196" width="176" height="52"/>
 
-            <path d="M285 246 L285 292 L490 292" marker-end="url(#arr)"/>
-            <path d="M600 246 L600 268 L490 268 L490 292" />
-            <path d="M895 246 L895 320 L80 320 L80 360" marker-end="url(#arr)"/>
-
-            <rect x="20" y="360" width="200" height="48"/>
-            <rect x="260" y="360" width="200" height="48"/>
-            <rect x="500" y="292" width="220" height="48"/>
-            <line x1="220" y1="384" x2="260" y2="384" marker-end="url(#arr)"/>
-            <line x1="460" y1="384" x2="500" y2="316" marker-end="url(#arr)"/>
-            <path d="M720 316 L790 316 L790 76 L850 76" marker-end="url(#arr)"/>
+            <rect x="16" y="348" width="200" height="48"/>
+            <rect x="256" y="348" width="200" height="48"/>
+            <rect x="496" y="348" width="280" height="48"/>
+            <line x1="216" y1="372" x2="256" y2="372" marker-end="url(#arr)"/>
+            <line x1="456" y1="372" x2="496" y2="372" marker-end="url(#arr)"/>
+            <path d="M776 372 H1056 V16 H928 V48" marker-end="url(#arr)"/>
           </g>
           <g fill="currentColor" font-family="Be Vietnam Pro, sans-serif" font-size="12">
-            <text x="95" y="74" text-anchor="middle" font-weight="600">Tạo nhóm cha</text>
-            <text x="95" y="90" text-anchor="middle" font-size="10">Mã, loại, GT gốc</text>
-            <text x="285" y="70" text-anchor="middle" font-weight="600">Lưu cha</text>
-            <text x="285" y="86" text-anchor="middle" font-size="10">Tự do ban đầu = GT gốc</text>
-            <text x="446" y="80" text-anchor="middle" font-size="11">GT&gt;0</text>
-            <text x="446" y="94" text-anchor="middle" font-size="11">mã unique?</text>
-            <text x="605" y="74" text-anchor="middle" font-weight="600">Tạo TSĐB con</text>
-            <text x="605" y="90" text-anchor="middle" font-size="10">GT phân bổ + đích</text>
-            <text x="766" y="80" text-anchor="middle" font-size="11">Đích?</text>
-            <text x="905" y="74" text-anchor="middle" font-weight="600">Σ con</text>
-            <text x="905" y="90" text-anchor="middle" font-size="11">≤ GT cha?</text>
-            <text x="285" y="218" text-anchor="middle" font-size="11">Từ chối lưu cha</text>
-            <text x="285" y="234" text-anchor="middle" font-size="10">Báo thiếu GT / trùng mã</text>
-            <text x="600" y="218" text-anchor="middle" font-size="11">Từ chối lưu con</text>
-            <text x="600" y="234" text-anchor="middle" font-size="10">Thiếu NH+HĐ hoặc Tự do</text>
-            <text x="895" y="218" text-anchor="middle" font-size="11">Chặn — vượt sức chứa</text>
-            <text x="895" y="234" text-anchor="middle" font-size="10">Hiện phần vượt, Tự do không âm</text>
-            <text x="120" y="380" text-anchor="middle" font-size="11">Sửa / Giải chấp / Ngưng</text>
-            <text x="120" y="396" text-anchor="middle" font-size="10">Không xóa cứng cầm cố</text>
-            <text x="360" y="380" text-anchor="middle" font-size="11">Nhật ký trước–sau</text>
-            <text x="360" y="396" text-anchor="middle" font-size="10">User, lúc, GT cũ → mới</text>
-            <text x="610" y="312" text-anchor="middle" font-weight="600">Tính lại Tự do (field hệ thống)</text>
-            <text x="610" y="328" text-anchor="middle" font-size="10">Rồi mới lên báo cáo sếp</text>
+            <text x="82" y="74" text-anchor="middle" font-weight="600">Tạo nhóm cha</text>
+            <text x="82" y="90" text-anchor="middle" font-size="10">Mã, loại, GT gốc</text>
+            <text x="250" y="70" text-anchor="middle" font-weight="600">Lưu cha</text>
+            <text x="250" y="86" text-anchor="middle" font-size="10">Tự do ban đầu = GT gốc</text>
+            <text x="400" y="72" text-anchor="middle" font-size="11">GT&gt;0</text>
+            <text x="400" y="86" text-anchor="middle" font-size="11">mã unique?</text>
+            <text x="544" y="74" text-anchor="middle" font-weight="600">Tạo TSĐB con</text>
+            <text x="544" y="90" text-anchor="middle" font-size="10">GT phân bổ + đích</text>
+            <text x="690" y="80" text-anchor="middle" font-size="11">Đích?</text>
+            <text x="928" y="74" text-anchor="middle" font-weight="600">Σ con</text>
+            <text x="928" y="90" text-anchor="middle" font-size="11">≤ GT cha?</text>
+            <text x="400" y="218" text-anchor="middle" font-size="11">Từ chối lưu cha</text>
+            <text x="400" y="234" text-anchor="middle" font-size="10">Báo thiếu GT / trùng mã</text>
+            <text x="690" y="218" text-anchor="middle" font-size="11">Từ chối lưu con</text>
+            <text x="690" y="234" text-anchor="middle" font-size="10">Thiếu NH+HĐ hoặc Tự do</text>
+            <text x="928" y="218" text-anchor="middle" font-size="11">Chặn — vượt sức chứa</text>
+            <text x="928" y="234" text-anchor="middle" font-size="10">Phần vượt, Tự do không âm</text>
+            <text x="116" y="368" text-anchor="middle" font-size="11">Sửa / Giải chấp / Ngưng</text>
+            <text x="116" y="384" text-anchor="middle" font-size="10">Không xóa cứng cầm cố</text>
+            <text x="356" y="368" text-anchor="middle" font-size="11">Nhật ký trước–sau</text>
+            <text x="356" y="384" text-anchor="middle" font-size="10">User, lúc, GT cũ → mới</text>
+            <text x="636" y="368" text-anchor="middle" font-weight="600">Tính lại Tự do (field hệ thống)</text>
+            <text x="636" y="384" text-anchor="middle" font-size="10">Rồi mới lên báo cáo sếp</text>
           </g>
           <g fill="currentColor" font-size="10" font-family="IBM Plex Mono, monospace" opacity="0.7">
-            <text x="20" y="28">HAPPY PATH</text>
+            <text x="16" y="28">HAPPY PATH</text>
+            <text x="16" y="332">SAU KHI ĐÃ LƯU</text>
+          </g>
+          <g fill="currentColor" font-size="9" font-family="Be Vietnam Pro, sans-serif" opacity="0.7">
+            <text x="412" y="156">Không</text>
+            <text x="702" y="156">Không</text>
+            <text x="940" y="156">Không</text>
           </g>
         </svg>
       </div>
