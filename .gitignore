@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+.AppleDouble
+._*
+*.icloud
+
+# Internal interview pack — keep on disk, never push
+environment/
+submission/defense_prep.md
+submission/email_followup_sau_pv.md

@@ -1,0 +1,680 @@
+<mxfile host="app.diagrams.net" modified="2026-10-06T04:30:00.000Z" agent="Claude Code" version="24.7.17" type="device">
+  <diagram id="p0" name="0. Bối cảnh">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="c-bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F7F2;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="1600" height="900" as="geometry"/>
+        </mxCell>
+        <mxCell id="c-kicker" value="TAKE-HOME · BA FRESHER · FINANCE TRANSFORMATION · MINH TRÍ CONSULTING" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Courier New;fontSize=12;fontColor=#5A6A62;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="48" y="36" width="900" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="c-title" value="Sổ TSĐB Tập đoàn ABC" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Georgia;fontSize=40;fontColor=#1A2620;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="48" y="64" width="900" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="c-sub" value="Ban Lãnh đạo cần biết chính xác giá trị TSĐB còn Tự do theo từng loại tài sản&lt;br&gt;để lập kế hoạch vay mới — không chờ Phòng Tài chính cộng tay trên Excel." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=16;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="48" y="128" width="820" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="c-meta" value="Phạm Quang Huy  ·  Nộp 06/10/2026  ·  Trình bày 10–15 phút, 07/10/2026 09:30" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Helvetica;fontSize=13;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="48" y="188" width="820" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="c-formula-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D7EEE3;strokeColor=#1B6A48;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="48" y="232" width="980" height="88" as="geometry"/>
+        </mxCell>
+        <mxCell id="c-formula-lbl" value="CÔNG THỨC LÃNH ĐẠO" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Courier New;fontSize=11;fontColor=#1B6A48;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="64" y="240" width="400" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="c-formula" value="Tự do tại thời điểm xem  =  Σ GT cha  −  Σ phân bổ con còn hiệu lực tại cùng thời điểm" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Courier New;fontSize=18;fontColor=#1A2620;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="64" y="264" width="940" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="c-ex1" value="&lt;b&gt;TSĐB cha (tài sản gốc)&lt;/b&gt;&lt;br&gt;Lô đất Q.7&lt;br&gt;&lt;font style=&quot;font-size:22px&quot;&gt;100 tỷ&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8A978F;align=left;verticalAlign=top;spacingLeft=14;spacingTop=10;fontFamily=Helvetica;fontSize=13;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="48" y="360" width="220" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="c-minus1" value="−" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontFamily=Georgia;fontSize=36;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="268" y="390" width="40" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="c-ex2" value="&lt;b&gt;Con cầm cố Bank A&lt;/b&gt;&lt;br&gt;Vietcombank · HĐ-VCB-001&lt;br&gt;&lt;font style=&quot;font-size:22px&quot;&gt;40 tỷ&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E2E6EE;strokeColor=#3A4760;align=left;verticalAlign=top;spacingLeft=14;spacingTop=10;fontFamily=Helvetica;fontSize=13;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="308" y="360" width="240" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="c-minus2" value="−" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontFamily=Georgia;fontSize=36;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="548" y="390" width="40" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="c-ex3" value="&lt;b&gt;Con cầm cố Bank B&lt;/b&gt;&lt;br&gt;BIDV · HĐ-BIDV-002&lt;br&gt;&lt;font style=&quot;font-size:22px&quot;&gt;30 tỷ&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E2E6EE;strokeColor=#3A4760;align=left;verticalAlign=top;spacingLeft=14;spacingTop=10;fontFamily=Helvetica;fontSize=13;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="588" y="360" width="220" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="c-eq" value="=" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontFamily=Georgia;fontSize=36;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="808" y="390" width="40" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="c-ex4" value="&lt;b&gt;TSĐB Tự do&lt;/b&gt;&lt;br&gt;Còn để vay tiếp&lt;br&gt;&lt;font style=&quot;font-size:22px&quot;&gt;30 tỷ&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D7EEE3;strokeColor=#1B6A48;align=left;verticalAlign=top;spacingLeft=14;spacingTop=10;fontFamily=Helvetica;fontSize=13;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="848" y="360" width="180" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="c-asm" value="&lt;b&gt;Quy ước số liệu&lt;/b&gt;&lt;br&gt;• Mọi số dùng cùng đơn vị/loại tiền và cùng thời điểm xem.&lt;br&gt;• Chưa haircut / LTV — Tự do là số theo sổ, không phải hạn mức NH chấp nhận.&lt;br&gt;• Chỉ phân bổ còn hiệu lực tại mốc xem mới bị trừ; hết hiệu lực/lịch sử không bị trừ.&lt;br&gt;• Tái phân bổ chỉ tính ở đích hiện hành một lần; Tự do là số hệ thống tính." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;align=left;verticalAlign=top;spacingLeft=16;spacingTop=12;fontFamily=Helvetica;fontSize=13;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="48" y="500" width="980" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="c-agenda" value="&lt;b&gt;3 yêu cầu đề bài&lt;/b&gt;&lt;br&gt;&lt;br&gt;1. Flowchart — tạo cha → con → gán NH/HĐ hoặc Tự do + 4 cổng&lt;br&gt;&lt;br&gt;2. Use case + mockup — thu gọn (sếp thấy Tự do) / mở rộng (HĐ cầm cố)&lt;br&gt;&lt;br&gt;3. Rủi ro CRUD không phân quyền — khóa ô tính, cấm xóa cứng, nhật ký, snapshot" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1A2620;strokeColor=none;align=left;verticalAlign=top;spacingLeft=20;spacingTop=18;fontFamily=Helvetica;fontSize=14;fontColor=#F5F7F2;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="232" width="480" height="408" as="geometry"/>
+        </mxCell>
+        <mxCell id="c-foot" value="Trang 0/5  ·  Không đọc nguyên văn — chỉ vào số Tự do, cổng chặn, và field khóa nhập." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="48" y="852" width="900" height="24" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="p1" name="3. Flowchart">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="f-bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F7F2;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="1600" height="900" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-title" value="1. Luồng tạo cha → con → gán đích" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Georgia;fontSize=28;fontColor=#1A2620;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="900" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-sub" value="Cổng 1–3 chặn lúc tạo mới. Cổng 4 bắt buộc chạy lại khi Sửa GT / Giải chấp / Ngưng — không có nhánh Không, không xóa cứng." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=14;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="40" y="56" width="1100" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-start" value="Bắt đầu" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1A2620;strokeColor=#1A2620;fontColor=#F5F7F2;fontFamily=Helvetica;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="100" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-p1" value="&lt;b&gt;Tạo nhóm TSĐB cha&lt;/b&gt;&lt;br&gt;Mã · Loại (BĐS/CP/TG)&lt;br&gt;GT gốc · Ngày định giá" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1A2620;strokeWidth=1.5;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="180" y="104" width="180" height="76" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-d1" value="Cổng 1&lt;br&gt;GT &amp;gt; 0&lt;br&gt;mã unique?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1B6A48;strokeWidth=1.5;fontFamily=Helvetica;fontSize=11;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="400" y="92" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-p2" value="&lt;b&gt;Lưu cha&lt;/b&gt;&lt;br&gt;Tự do ban đầu = GT gốc&lt;br&gt;(field hệ thống tính)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D7EEE3;strokeColor=#1B6A48;strokeWidth=1.5;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="570" y="104" width="180" height="76" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-p3" value="&lt;b&gt;Tạo phân bổ con&lt;/b&gt;&lt;br&gt;GT phân bổ&lt;br&gt;+ NH / HĐ bảo đảm" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1A2620;strokeWidth=1.5;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="790" y="104" width="190" height="76" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-d2" value="Cổng 2&lt;br&gt;NH + HĐ bảo đảm?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1B6A48;strokeWidth=1.5;fontFamily=Helvetica;fontSize=11;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="92" width="150" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-d3" value="Cổng 3&lt;br&gt;Σ phân bổ hiệu lực ≤ GT cha?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1B6A48;strokeWidth=1.5;fontFamily=Helvetica;fontSize=11;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="92" width="150" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-ok" value="&lt;b&gt;Lưu phân bổ + tính lại Tự do&lt;/b&gt;&lt;br&gt;GT cha − Σ phân bổ hiệu lực&lt;br&gt;Tại cùng thời điểm xem" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B6A48;strokeColor=#1B6A48;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#F5F7F2;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="104" width="170" height="76" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-s-p1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1A2620;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="f-start" target="f-p1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-p1-d1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1A2620;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="f-p1" target="f-d1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-d1-p2" value="Có" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1B6A48;strokeWidth=1.5;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=11;fontColor=#1B6A48;" edge="1" parent="1" source="f-d1" target="f-p2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-p2-p3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1A2620;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="f-p2" target="f-p3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-p3-d2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1A2620;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="f-p3" target="f-d2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-d2-d3" value="Có" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1B6A48;strokeWidth=1.5;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=11;fontColor=#1B6A48;" edge="1" parent="1" source="f-d2" target="f-d3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-d3-ok" value="Có" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1B6A48;strokeWidth=1.5;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=11;fontColor=#1B6A48;" edge="1" parent="1" source="f-d3" target="f-ok">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-rej1" value="&lt;b&gt;Từ chối lưu cha&lt;/b&gt;&lt;br&gt;Báo thiếu GT / trùng mã" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6E2DA;strokeColor=#9B3418;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#9B3418;" vertex="1" parent="1">
+          <mxGeometry x="375" y="260" width="180" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-rej2" value="&lt;b&gt;Từ chối lưu phân bổ&lt;/b&gt;&lt;br&gt;Thiếu NH / HĐ bảo đảm&lt;br&gt;Chưa ghi nhận hiệu lực" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6E2DA;strokeColor=#9B3418;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#9B3418;" vertex="1" parent="1">
+          <mxGeometry x="1005" y="260" width="180" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-rej3" value="&lt;b&gt;Chặn — vượt sức chứa&lt;/b&gt;&lt;br&gt;Hiện phần vượt&lt;br&gt;Tự do không âm, không đổi" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6E2DA;strokeColor=#9B3418;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#9B3418;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="260" width="190" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-d1-rej" value="Không" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9B3418;strokeWidth=1.5;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=11;fontColor=#9B3418;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="f-d1" target="f-rej1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-d2-rej" value="Không" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9B3418;strokeWidth=1.5;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=11;fontColor=#9B3418;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="f-d2" target="f-rej2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-d3-rej" value="Không" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9B3418;strokeWidth=1.5;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=11;fontColor=#9B3418;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="f-d3" target="f-rej3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-lane" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;" vertex="1" parent="1">
+          <mxGeometry x="40" y="348" width="1520" height="228" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-lane-t" value="CỔNG 4 · SAU KHI ĐÃ LƯU  ·  không có nhánh Không — bắt buộc tính lại + nhật ký" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Courier New;fontSize=12;fontColor=#1A2620;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="56" y="356" width="900" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-sua" value="&lt;b&gt;Sửa GT&lt;/b&gt;&lt;br&gt;Gõ lại số cha / con&lt;br&gt;Nếu Σ con &amp;gt; cha → chặn" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1A2620;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="56" y="384" width="200" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-giai" value="&lt;b&gt;Giải chấp = gỡ thế chấp&lt;/b&gt;&lt;br&gt;HĐ tất toán · dòng con còn&lt;br&gt;VD: 30 → 60, vết BIDV giữ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D7EEE3;strokeColor=#1B6A48;strokeWidth=1.5;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="272" y="384" width="230" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-ngung" value="&lt;b&gt;Ngưng hiệu lực&lt;/b&gt;&lt;br&gt;Tạm dừng (tranh chấp)&lt;br&gt;Dòng còn · tạm không trừ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1A2620;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="518" y="384" width="200" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-cam" value="&lt;b&gt;CẤM xóa cứng&lt;/b&gt;&lt;br&gt;Delete làm Tự do ảo&lt;br&gt;mất bằng chứng đối soát" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6E2DA;strokeColor=#9B3418;strokeWidth=1.5;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#9B3418;" vertex="1" parent="1">
+          <mxGeometry x="734" y="384" width="200" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-vd" value="Lô đất 100 − VCB 40 − BIDV 30 = Tự do 30  →  giải chấp BIDV  →  Tự do 60, dòng HĐ-BIDV-002 vẫn trên sổ (đã giải chấp)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="56" y="452" width="1100" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-log" value="&lt;b&gt;Nhật ký trước–sau&lt;/b&gt;&lt;br&gt;User · lúc · GT cũ → mới · HĐ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1A2620;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="56" y="480" width="360" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-recalc" value="&lt;b&gt;Tính lại Tự do (ô khóa nhập)&lt;/b&gt;&lt;br&gt;GT gốc − Σ cầm cố còn hiệu lực" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D7EEE3;strokeColor=#1B6A48;strokeWidth=1.5;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="456" y="480" width="360" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-rpt" value="&lt;b&gt;Snapshot báo cáo sếp&lt;/b&gt;&lt;br&gt;Chốt cuối ngày — không đè số đã gửi" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1A2620;strokeColor=#1A2620;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#F5F7F2;" vertex="1" parent="1">
+          <mxGeometry x="856" y="480" width="360" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-sua-log" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1A2620;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.2;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="f-sua" target="f-log">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-giai-log" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1B6A48;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="f-giai" target="f-log">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-ngung-log" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1A2620;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.8;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="f-ngung" target="f-log">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-log-re" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1A2620;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="f-log" target="f-recalc">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-re-rpt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1A2620;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="f-recalc" target="f-rpt">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-g1" value="&lt;b&gt;Cổng 1 · Cha (cổng GT)&lt;/b&gt;&lt;br&gt;GT gốc &amp;gt; 0, mã không trùng. Thiếu ngày định giá → cảnh báo, chưa chặn." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;align=left;verticalAlign=top;spacingLeft=12;spacingTop=8;fontFamily=Helvetica;fontSize=12;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="40" y="592" width="370" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-g2" value="&lt;b&gt;Cổng 2 · Đích phân bổ&lt;/b&gt;&lt;br&gt;Phân bổ cầm cố phải gắn NH + HĐ bảo đảm. Phần không phân bổ là số Tự do hệ thống tính, không tạo khoản cầm cố." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;align=left;verticalAlign=top;spacingLeft=12;spacingTop=8;fontFamily=Helvetica;fontSize=12;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="430" y="592" width="370" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-g3" value="&lt;b&gt;Cổng 3 · Sức chứa tại thời điểm giao dịch&lt;/b&gt;&lt;br&gt;Σ phân bổ còn hiệu lực ≤ GT cha. Phân bổ hết hiệu lực/lịch sử không chiếm sức chứa; vượt → chặn lưu." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;align=left;verticalAlign=top;spacingLeft=12;spacingTop=8;fontFamily=Helvetica;fontSize=12;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="820" y="592" width="370" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-g4" value="&lt;b&gt;Cổng 4 · Tính lại&lt;/b&gt;&lt;br&gt;Giải chấp tăng Tự do kèm vết. Xóa cứng tăng Tự do nhưng mất bằng chứng — cấm." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;align=left;verticalAlign=top;spacingLeft=12;spacingTop=8;fontFamily=Helvetica;fontSize=12;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="592" width="350" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-pin" value="Câu chốt: BA không chỉ vẽ luồng tạo mới — luồng sửa / giải chấp mới làm sai số sếp. Cổng 4 giữ số tăng kèm vết, không tăng bằng cách xóa bằng chứng." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1A2620;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=16;fontFamily=Helvetica;fontSize=14;fontColor=#F5F7F2;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="672" width="1520" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="f-foot" value="Trang 1/5  ·  Giải chấp = gỡ thế chấp khi HĐ hết hiệu lực. Demo cổng 3 trên HTML: gán 50 tỷ vào lô đất (còn 30) → chặn." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="40" y="852" width="1400" height="24" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="p1b" name="4. Use case">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="u-bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F7F2;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="1600" height="900" as="geometry"/>
+        </mxCell>
+        <mxCell id="u-title" value="4. Use case — mục tiêu theo persona, không theo quyền" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Georgia;fontSize=26;fontColor=#1A2620;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1200" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="u-sub" value="Lãnh đạo / Finance / User Vận hành là persona theo việc thường làm; theo đề, mọi user có cùng quyền Xem / Thêm / Sửa / Xóa." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=14;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="40" y="56" width="1400" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="u-sys" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=8 8;strokeColor=#8A978F;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="280" y="100" width="1040" height="520" as="geometry"/>
+        </mxCell>
+        <mxCell id="u-sys-t" value="MODULE QUẢN LÝ TSĐB" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontFamily=Courier New;fontSize=12;fontColor=#5A6A62;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="280" y="108" width="1040" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="u-sep" value="" style="endArrow=none;html=1;strokeColor=#C3CDC6;strokeWidth=1;dashed=1;dashPattern=6 6;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="140" as="sourcePoint"/>
+            <mxPoint x="800" y="600" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="u-m1t" value="MÀN 1 · THU GỌN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontFamily=Courier New;fontSize=13;fontColor=#1B6A48;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="300" y="140" width="480" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="u-m2t" value="MÀN 2 · MỞ RỘNG" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontFamily=Courier New;fontSize=13;fontColor=#3A4760;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="820" y="140" width="480" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc1" value="Xem Tự do theo loại&lt;br&gt;(BĐS / CP / TG)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#D7EEE3;strokeColor=#1B6A48;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#1A2620;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="390" y="176" width="200" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc2" value="Đọc KPI&lt;br&gt;50 tỷ còn để vay tiếp" style="ellipse;whiteSpace=wrap;html=1;fillColor=#D7EEE3;strokeColor=#1B6A48;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#1A2620;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="390" y="268" width="200" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc3" value="Lọc loại tài sản&lt;br&gt;(tùy chọn)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1B6A48;fontFamily=Helvetica;fontSize=12;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="390" y="360" width="200" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc4" value="Quyết định vay tiếp&lt;br&gt;(ngoài hệ thống)" style="ellipse;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 6;fillColor=#FFFFFF;strokeColor=#8A978F;fontFamily=Helvetica;fontSize=12;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="390" y="448" width="200" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc5" value="Mở dòng cha&lt;br&gt;xem NH / số HĐ" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E2E6EE;strokeColor=#3A4760;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#1A2620;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="910" y="176" width="200" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc6" value="Đối soát cầm cố&lt;br&gt;với ngân hàng" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E2E6EE;strokeColor=#3A4760;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#1A2620;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="910" y="268" width="200" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc7" value="Gán phân bổ mới&lt;br&gt;(cổng 3 kiểm tra sức chứa)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#3A4760;fontFamily=Helvetica;fontSize=12;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="910" y="360" width="200" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc8" value="Sửa GT / Giải chấp / Ngưng&lt;br&gt;(cổng 4 · lưu vết)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#3A4760;fontFamily=Helvetica;fontSize=12;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="910" y="448" width="200" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc-inc" value="&lt;&lt;extend&gt;&gt;" style="endArrow=open;html=1;dashed=1;dashPattern=6 6;strokeColor=#1B6A48;fontFamily=Helvetica;fontSize=10;fontColor=#1B6A48;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="uc3" target="uc1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc-ext" value="&lt;&lt;extend&gt;&gt;" style="endArrow=open;html=1;dashed=1;dashPattern=6 6;strokeColor=#3A4760;fontFamily=Helvetica;fontSize=10;fontColor=#3A4760;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uc5" target="uc1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a-sep" value="Ban Lãnh đạo" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#1A2620;strokeColor=#1A2620;fontFamily=Helvetica;fontSize=12;fontColor=#1A2620;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="88" y="250" width="40" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="a-fin" value="Phòng Tài chính" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#1A2620;strokeColor=#1A2620;fontFamily=Helvetica;fontSize=12;fontColor=#1A2620;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1472" y="210" width="40" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="a-ops" value="User vận hành" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#5A6A62;strokeColor=#5A6A62;fontFamily=Helvetica;fontSize=12;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="1472" y="400" width="40" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-s1" style="endArrow=open;html=1;strokeColor=#1A2620;strokeWidth=1.2;exitX=1;exitY=0.35;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="a-sep" target="uc1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-s2" style="endArrow=open;html=1;strokeColor=#1A2620;strokeWidth=1.2;exitX=1;exitY=0.55;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="a-sep" target="uc2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-s4" style="endArrow=open;html=1;dashed=1;dashPattern=6 6;strokeColor=#8A978F;strokeWidth=1.2;exitX=1;exitY=0.8;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="a-sep" target="uc4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-f5" style="endArrow=open;html=1;strokeColor=#1A2620;strokeWidth=1.2;exitX=0;exitY=0.3;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="a-fin" target="uc5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-f6" style="endArrow=open;html=1;strokeColor=#1A2620;strokeWidth=1.2;exitX=0;exitY=0.55;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="a-fin" target="uc6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-o7" style="endArrow=open;html=1;strokeColor=#5A6A62;strokeWidth=1.2;exitX=0;exitY=0.35;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="a-ops" target="uc7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-o8" style="endArrow=open;html=1;strokeColor=#5A6A62;strokeWidth=1.2;exitX=0;exitY=0.65;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="a-ops" target="uc8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="u-note1" value="&lt;b&gt;Sếp trên màn 1&lt;/b&gt;&lt;br&gt;Không nhập liệu. Ô Tự do khóa.&lt;br&gt;Câu hỏi đề: còn bao nhiêu để vay tiếp?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1B6A48;align=left;verticalAlign=top;spacingLeft=12;spacingTop=8;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="640" width="360" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="u-note2" value="&lt;b&gt;Finance trên màn 2&lt;/b&gt;&lt;br&gt;Mở BĐS: VCB 40 · BIDV 30.&lt;br&gt;Đối soát HĐ, không cộng tay Excel." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#3A4760;align=left;verticalAlign=top;spacingLeft=12;spacingTop=8;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="420" y="640" width="360" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="u-note3" value="&lt;b&gt;USER STORY · Gán phân bổ (Cổng 3)&lt;/b&gt;&lt;br&gt;Là User Vận hành, tôi muốn gán 50 tỷ vào cha 100 tỷ đang có 40 + 30, để ghi nhận HĐ mới.&lt;br&gt;&lt;b&gt;Kết quả:&lt;/b&gt; 120 &amp;gt; 100 → chặn lưu, báo vượt 20; số Tự do 30 không đổi." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9B3418;align=left;verticalAlign=top;spacingLeft=12;spacingTop=8;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="800" y="640" width="380" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="u-note4" value="&lt;b&gt;USER STORY · Vòng đời (Cổng 4)&lt;/b&gt;&lt;br&gt;Khi B1 xác nhận giải chấp 20, User Vận hành ghi ngày hiệu lực/lý do; hệ thống chuyển Released, giữ audit và tính lại.&lt;br&gt;Sửa GT → chạy lại Cổng 3. Ngưng không giải phóng nếu còn ràng buộc. Không xóa cứng phân bổ đã dùng." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1A2620;strokeColor=none;align=left;verticalAlign=top;spacingLeft=12;spacingTop=8;fontFamily=Helvetica;fontSize=11;fontColor=#F5F7F2;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="640" width="360" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="u-foot" value="Trang Use Case · Persona ≠ quyền. Cổng 3 ngăn over-allocation; Cổng 4 lưu lịch sử, cập nhật số theo ngày hiệu lực; xóa cứng không dùng để giải chấp." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="40" y="852" width="1400" height="24" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="p2" name="1. Màn tổng - Tự do tại thời điểm xem">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="m-bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8ECE6;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="1600" height="900" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-title" value="1. Màn tổng — Tài sản Tự do tại thời điểm xem" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Georgia;fontSize=24;fontColor=#1A2620;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="32" y="16" width="900" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-sub" value="Một snapshot nhất quán: tổng GT tài sản gốc trừ tổng phân bổ con còn hiệu lực tại cùng mốc xem." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=14;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="32" y="50" width="1100" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-chrome" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F7F2;strokeColor=#8A978F;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="32" y="84" width="1536" height="740" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-bar" value="Tập đoàn ABC  ·  Sổ TSĐB  ·  Snapshot mẫu: 30/09/2026 23:59" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1A2620;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=16;fontFamily=Helvetica;fontSize=14;fontColor=#F5F7F2;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="32" y="84" width="1200" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-lock" value="Ô Tự do khóa — hệ thống tính" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1A2620;strokeColor=none;align=right;verticalAlign=middle;spacingRight=16;fontFamily=Courier New;fontSize=12;fontColor=#6DCAA0;" vertex="1" parent="1">
+          <mxGeometry x="1232" y="84" width="336" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-q" value="Câu hỏi lãnh đạo:  Hiện còn bao nhiêu tài sản Tự do để đem đi vay tiếp?" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=14;fontColor=#5A6A62;fontStyle=2" vertex="1" parent="1">
+          <mxGeometry x="52" y="136" width="900" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-k1" value="TỔNG GT GỐC&lt;br&gt;&lt;font style=&quot;font-size:28px&quot;&gt;140 tỷ&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=16;fontFamily=Courier New;fontSize=11;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="52" y="172" width="480" height="72" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-k2" value="ĐÃ CẦM CỐ&lt;br&gt;&lt;font style=&quot;font-size:28px&quot;&gt;90 tỷ&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=16;fontFamily=Courier New;fontSize=11;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="544" y="172" width="480" height="72" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-k3" value="TỰ DO ĐỂ VAY TIẾP&lt;br&gt;&lt;font style=&quot;font-size:28px&quot;&gt;50 tỷ&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D7EEE3;strokeColor=#1B6A48;align=left;verticalAlign=middle;spacingLeft=16;fontFamily=Courier New;fontSize=11;fontColor=#1B6A48;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1036" y="172" width="508" height="72" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-th" value="Nhóm TSĐB cha" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=12;fontFamily=Courier New;fontSize=11;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="52" y="268" width="380" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-th2" value="Loại" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=12;fontFamily=Courier New;fontSize=11;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="432" y="268" width="140" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-th3" value="GT gốc" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=11;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="572" y="268" width="160" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-th4" value="Cầm cố" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=11;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="732" y="268" width="160" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-th5" value="Tự do" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D7EEE3;strokeColor=#1B6A48;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=11;fontColor=#1B6A48;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="892" y="268" width="180" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-th6" value="Trạng thái" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=12;fontFamily=Courier New;fontSize=11;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="1072" y="268" width="472" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-r1a" value="+   Lô đất Khu Nam Q.7&lt;br&gt;&lt;font style=&quot;font-size:10px&quot; color=&quot;#5A6A62&quot;&gt;     TS-BDS-001&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=12;fontFamily=Helvetica;fontSize=13;fontColor=#1A2620;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="52" y="300" width="380" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-r1b" value="BĐS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=12;fontFamily=Helvetica;fontSize=13;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="432" y="300" width="140" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-r1c" value="100 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=14;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="572" y="300" width="160" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-r1d" value="70 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=14;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="732" y="300" width="160" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-r1e" value="30 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D7EEE3;strokeColor=#1B6A48;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=16;fontColor=#1B6A48;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="892" y="300" width="180" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-r1f" value="Tự do 30 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=12;fontFamily=Helvetica;fontSize=13;fontColor=#1B6A48;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1072" y="300" width="472" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-r2a" value="+   Cổ phiếu VNM · 2.1 triệu CP&lt;br&gt;&lt;font style=&quot;font-size:10px&quot; color=&quot;#5A6A62&quot;&gt;     TS-CP-014&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=12;fontFamily=Helvetica;fontSize=13;fontColor=#1A2620;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="52" y="356" width="380" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-r2b" value="Cổ phiếu" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=12;fontFamily=Helvetica;fontSize=13;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="432" y="356" width="140" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-r2c" value="20 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=14;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="572" y="356" width="160" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-r2d" value="15 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=14;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="732" y="356" width="160" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-r2e" value="5 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D7EEE3;strokeColor=#1B6A48;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=16;fontColor=#1B6A48;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="892" y="356" width="180" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-r2f" value="Tự do 5 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=12;fontFamily=Helvetica;fontSize=13;fontColor=#1B6A48;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1072" y="356" width="472" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-r3a" value="+   HĐ tiền gửi VietinBank&lt;br&gt;&lt;font style=&quot;font-size:10px&quot; color=&quot;#5A6A62&quot;&gt;     TS-TG-007&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=12;fontFamily=Helvetica;fontSize=13;fontColor=#1A2620;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="52" y="412" width="380" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-r3b" value="Tiền gửi" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=12;fontFamily=Helvetica;fontSize=13;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="432" y="412" width="140" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-r3c" value="20 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=14;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="572" y="412" width="160" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-r3d" value="5 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=14;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="732" y="412" width="160" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-r3e" value="15 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D7EEE3;strokeColor=#1B6A48;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=16;fontColor=#1B6A48;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="892" y="412" width="180" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-r3f" value="Tự do 15 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=12;fontFamily=Helvetica;fontSize=13;fontColor=#1B6A48;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1072" y="412" width="472" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-call" value="Tại 30/09/2026 23:59:  Σ GT gốc 140 − Σ phân bổ còn hiệu lực 90 = 50 tỷ Tự do. Không trừ dòng hết hiệu lực/lịch sử; mỗi tái phân bổ chỉ tính một lần." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1A2620;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=16;fontFamily=Helvetica;fontSize=14;fontColor=#F5F7F2;" vertex="1" parent="1">
+          <mxGeometry x="52" y="492" width="1492" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-n1" value="&lt;b&gt;Filter loại tài sản&lt;/b&gt;&lt;br&gt;Đúng câu hỏi đề: Tự do theo từng loại (BĐS / CP / TG)." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;align=left;verticalAlign=top;spacingLeft=12;spacingTop=8;fontFamily=Helvetica;fontSize=13;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="52" y="556" width="480" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-n2" value="&lt;b&gt;Thu gọn = câu trả lời sếp&lt;/b&gt;&lt;br&gt;Không cần mở dòng con nếu chỉ hỏi “còn bao nhiêu”." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;align=left;verticalAlign=top;spacingLeft=12;spacingTop=8;fontFamily=Helvetica;fontSize=13;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="548" y="556" width="480" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-n3" value="&lt;b&gt;Bấm + để mở trang 2b&lt;/b&gt;&lt;br&gt;Xem con đã cầm cố cho ngân hàng / HĐ nào." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;align=left;verticalAlign=top;spacingLeft=12;spacingTop=8;fontFamily=Helvetica;fontSize=13;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="1044" y="556" width="500" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="m-foot" value="Màn 1/5  ·  Ban Lãnh đạo đọc tổng tại mốc xem; chọn tài sản cha để truy xuất bằng chứng ở Collateral Register." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="32" y="852" width="900" height="24" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="p3" name="2. Collateral Register - Tra cứu cùng thời điểm">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="x-bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8ECE6;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="1600" height="900" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-title" value="2. Collateral Register — truy xuất số tại thời điểm xem" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Georgia;fontSize=22;fontColor=#1A2620;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="32" y="16" width="1100" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-sub" value="Drill-down từ màn tổng: xem GT phân bổ, ngân hàng/HĐ, thời hạn hiệu lực và lịch sử trước hoặc tại đúng snapshot." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=14;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="32" y="50" width="1400" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-chrome" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F7F2;strokeColor=#8A978F;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="32" y="80" width="1536" height="760" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-bar" value="COLLATERAL REGISTER  ·  TS-BDS-001  ·  Snapshot: 30/09/2026 23:59" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1A2620;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=16;fontFamily=Helvetica;fontSize=14;fontColor=#F5F7F2;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="32" y="80" width="1536" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-th1" value="Nhóm / Hợp đồng" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=12;fontFamily=Courier New;fontSize=11;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="52" y="140" width="420" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-th2" value="Loại" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=12;fontFamily=Courier New;fontSize=11;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="472" y="140" width="120" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-th3" value="GT gốc / phân bổ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=11;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="592" y="140" width="180" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-th4" value="Cầm cố" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=11;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="772" y="140" width="140" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-th5" value="Tự do" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D7EEE3;strokeColor=#1B6A48;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=11;fontColor=#1B6A48;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="912" y="140" width="160" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-th6" value="Trạng thái" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=12;fontFamily=Courier New;fontSize=11;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="1072" y="140" width="472" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-p1a" value="−   Lô đất Khu Nam Q.7     TS-BDS-001" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=12;fontFamily=Helvetica;fontSize=13;fontColor=#1A2620;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="52" y="168" width="420" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-p1b" value="BĐS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=12;fontFamily=Helvetica;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="472" y="168" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-p1c" value="100 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="592" y="168" width="180" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-p1d" value="70 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="772" y="168" width="140" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-p1e" value="30 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D7EEE3;strokeColor=#1B6A48;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=15;fontColor=#1B6A48;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="912" y="168" width="160" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-p1f" value="Tự do 30 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=12;fontFamily=Helvetica;fontSize=13;fontColor=#1B6A48;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1072" y="168" width="472" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-c1a" value="        Vietcombank  ·  HĐ-VCB-001" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=12;fontFamily=Helvetica;fontSize=13;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="52" y="208" width="420" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-c1b" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;" vertex="1" parent="1">
+          <mxGeometry x="472" y="208" width="120" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-c1c" value="40 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="592" y="208" width="180" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-c1d" value="40 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="772" y="208" width="140" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-c1e" value="—" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=13;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="912" y="208" width="160" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-c1f" value="Active · hiệu lực từ 01/07/2026" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E2E6EE;strokeColor=#3A4760;align=left;verticalAlign=middle;spacingLeft=12;fontFamily=Helvetica;fontSize=12;fontColor=#3A4760;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1072" y="208" width="472" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-c2a" value="        BIDV  ·  HĐ-BIDV-002" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=12;fontFamily=Helvetica;fontSize=13;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="52" y="244" width="420" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-c2b" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;" vertex="1" parent="1">
+          <mxGeometry x="472" y="244" width="120" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-c2c" value="30 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="592" y="244" width="180" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-c2d" value="30 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="772" y="244" width="140" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-c2e" value="—" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=13;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="912" y="244" width="160" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-c2f" value="Active · hiệu lực từ 15/08/2026" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E2E6EE;strokeColor=#3A4760;align=left;verticalAlign=middle;spacingLeft=12;fontFamily=Helvetica;fontSize=12;fontColor=#3A4760;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1072" y="244" width="472" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-p2a" value="+   Cổ phiếu VNM     TS-CP-014" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=12;fontFamily=Helvetica;fontSize=13;fontColor=#1A2620;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="52" y="280" width="420" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-p2b" value="Cổ phiếu" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=12;fontFamily=Helvetica;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="472" y="280" width="120" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-p2c" value="20 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="592" y="280" width="180" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-p2d" value="15 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="772" y="280" width="140" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-p2e" value="5 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D7EEE3;strokeColor=#1B6A48;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=15;fontColor=#1B6A48;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="912" y="280" width="160" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-p2f" value="Tự do 5 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=12;fontFamily=Helvetica;fontSize=13;fontColor=#1B6A48;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1072" y="280" width="472" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-p3a" value="+   HĐ tiền gửi VietinBank     TS-TG-007" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=12;fontFamily=Helvetica;fontSize=13;fontColor=#1A2620;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="52" y="316" width="420" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-p3b" value="Tiền gửi" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=12;fontFamily=Helvetica;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="472" y="316" width="120" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-p3c" value="20 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="592" y="316" width="180" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-p3d" value="5 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="772" y="316" width="140" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-p3e" value="15 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D7EEE3;strokeColor=#1B6A48;align=right;verticalAlign=middle;spacingRight=12;fontFamily=Courier New;fontSize=15;fontColor=#1B6A48;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="912" y="316" width="160" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-p3f" value="Tự do 15 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=12;fontFamily=Helvetica;fontSize=13;fontColor=#1B6A48;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1072" y="316" width="472" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-form" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;" vertex="1" parent="1">
+          <mxGeometry x="52" y="372" width="1492" height="88" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-fl" value="LỊCH SỬ PHÂN BỔ  ·  BIDV / HĐ-BIDV-002  ·  cùng tài sản cha" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Courier New;fontSize=11;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="68" y="380" width="600" height="18" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-f1" value="Ghi nhận: 01/06 09:00" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#8A978F;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="68" y="408" width="280" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-f2" value="Hiệu lực từ: 01/06" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#8A978F;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="360" y="408" width="160" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-f3" value="Tạo phân bổ AL-002: 20 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#8A978F;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="532" y="408" width="240" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-f4" value="BIDV / HĐ-BIDV-002" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF1EA;strokeColor=#8A978F;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="784" y="408" width="240" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-btn" value="Active · 20 tỷ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E2E6EE;strokeColor=#3A4760;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=13;fontColor=#3A4760;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1040" y="408" width="200" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-err" value="HISTORY · Ghi nhận 15/08/2026 14:00 · Hiệu lực từ 15/08 · AL-002: 20 → 30 tỷ · Snapshot 30/09/2026 dùng mức 30 tỷ. Hai mốc thời gian được giữ để truy nguyên." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF3D8;strokeColor=#B86700;align=left;verticalAlign=middle;spacingLeft=16;fontFamily=Helvetica;fontSize=13;fontColor=#4A3B1C;" vertex="1" parent="1">
+          <mxGeometry x="52" y="476" width="1492" height="52" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-n1" value="&lt;b&gt;Snapshot đang xem&lt;/b&gt;&lt;br&gt;30/09/2026 23:59. Màn tổng và màn chi tiết dùng cùng một mốc dữ liệu." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;align=left;verticalAlign=top;spacingLeft=14;spacingTop=10;fontFamily=Helvetica;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="52" y="548" width="480" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-n2" value="&lt;b&gt;Phân bổ còn hiệu lực&lt;/b&gt;&lt;br&gt;Chỉ phân bổ hiệu lực tại snapshot bị trừ. Hết hiệu lực/lịch sử không trừ; tái phân bổ chỉ tính ở đích hiện hành một lần." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;align=left;verticalAlign=top;spacingLeft=14;spacingTop=10;fontFamily=Helvetica;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="548" y="548" width="480" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-n3" value="&lt;b&gt;Collateral register&lt;/b&gt;&lt;br&gt;Sổ tài sản gốc và phân bổ: ngân hàng/HĐ, GT, kỳ hiệu lực, trạng thái và lịch sử thay đổi có thể truy nguyên." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;align=left;verticalAlign=top;spacingLeft=14;spacingTop=10;fontFamily=Helvetica;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="1044" y="548" width="500" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="x-foot" value="Màn 2/5  ·  Truy xuất số cùng snapshot: current allocations → ngân hàng/HĐ → kỳ hiệu lực → audit history. Ghi nhận ngày nhập riêng với ngày hiệu lực." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="32" y="852" width="1500" height="24" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="p4" name="5. Rủi ro">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="r-bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F7F2;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="1600" height="900" as="geometry"/>
+        </mxCell>
+        <mxCell id="r-title" value="3. Rủi ro khi mọi user đều Xem / Thêm / Sửa / Xóa" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Georgia;fontSize=26;fontColor=#1A2620;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1400" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="r-sub" value="Đề khóa constraint “không phân quyền”. Không phản đối suông — nhận constraint, chỉ ra lỗ hổng làm sai số Tự do trên báo cáo sếp, rồi kiểm soát trên dữ liệu." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=14;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="1500" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="r-h1" value="HÀNH VI" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1A2620;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=14;fontFamily=Courier New;fontSize=11;fontColor=#F5F7F2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="104" width="360" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="r-h2" value="SỐ TỰ DO TRÊN BÁO CÁO SẾP" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1A2620;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=14;fontFamily=Courier New;fontSize=11;fontColor=#F5F7F2;" vertex="1" parent="1">
+          <mxGeometry x="400" y="104" width="1160" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="r-a1" value="Xóa cứng con đang cầm cố&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;≠ Giải chấp (gỡ thế chấp, giữ vết)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6E2DA;strokeColor=#9B3418;align=left;verticalAlign=middle;spacingLeft=14;fontFamily=Helvetica;fontSize=13;fontColor=#9B3418;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="136" width="360" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="r-b1" value="Tự do cũng tăng (30→60) như giải chấp, nhưng mất dòng HĐ → không đối soát được với ngân hàng. Use case trang 2 không có Xóa." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=14;fontFamily=Helvetica;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="400" y="136" width="1160" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="r-a2" value="Sửa GT cha giảm / GT con tăng" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6E2DA;strokeColor=#9B3418;align=left;verticalAlign=middle;spacingLeft=14;fontFamily=Helvetica;fontSize=14;fontColor=#9B3418;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="192" width="360" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="r-b2" value="Bỏ qua cổng 3 → Tự do âm hoặc vượt sức chứa. Báo cáo không còn cộng được." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=14;fontFamily=Helvetica;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="400" y="192" width="1160" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="r-a3" value="Sửa tay ô Tự do" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6E2DA;strokeColor=#9B3418;align=left;verticalAlign=middle;spacingLeft=14;fontFamily=Helvetica;fontSize=14;fontColor=#9B3418;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="248" width="360" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="r-b3" value="Mất single source of truth. Hai dashboard, hai số — đúng bệnh Excel hiện tại." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=14;fontFamily=Helvetica;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="400" y="248" width="1160" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="r-a4" value="Hai người sửa cùng lúc / không nhật ký" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6E2DA;strokeColor=#9B3418;align=left;verticalAlign=middle;spacingLeft=14;fontFamily=Helvetica;fontSize=14;fontColor=#9B3418;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="304" width="360" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="r-b4" value="Cộng hai HĐ hoặc mất một HĐ. Khi sếp hỏi “số này từ đâu” không trả lời được." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;align=left;verticalAlign=middle;spacingLeft=14;fontFamily=Helvetica;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="400" y="304" width="1160" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="r-fixh" value="BỐN KIỂM SOÁT ĐƠN GIẢN — không cần ma trận quyền" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Georgia;fontSize=18;fontColor=#1A2620;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="384" width="900" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="r-f1" value="&lt;b&gt;1. Tự do là field tính, khóa nhập&lt;/b&gt;&lt;br&gt;Mọi màn hình và báo cáo sếp đọc cùng một công thức. Kiểm soát rẻ nhất, chặn rủi ro lớn nhất." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D7EEE3;strokeColor=#1B6A48;align=left;verticalAlign=top;spacingLeft=14;spacingTop=10;fontFamily=Helvetica;fontSize=13;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="40" y="424" width="370" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="r-f2" value="&lt;b&gt;2. Cấm xóa cứng bản ghi cầm cố&lt;/b&gt;&lt;br&gt;Chỉ Giải chấp / Ngưng hiệu lực, bắt buộc lý do. Dòng con còn để đối soát với ngân hàng." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1B6A48;align=left;verticalAlign=top;spacingLeft=14;spacingTop=10;fontFamily=Helvetica;fontSize=13;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="426" y="424" width="370" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="r-f3" value="&lt;b&gt;3. Nhật ký trước–sau&lt;/b&gt;&lt;br&gt;Mọi Thêm / Sửa / Giải chấp: ai, lúc nào, GT cũ → mới, HĐ nào. Không phân quyền nhưng không ẩn danh." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1B6A48;align=left;verticalAlign=top;spacingLeft=14;spacingTop=10;fontFamily=Helvetica;fontSize=13;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="812" y="424" width="370" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="r-f4" value="&lt;b&gt;4. Snapshot báo cáo sếp cuối ngày&lt;/b&gt;&lt;br&gt;Vận hành trong ngày không đè gói đã gửi lãnh đạo. Tuỳ chọn: maker–checker 1 bước (Kế toán trưởng duyệt)." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1B6A48;align=left;verticalAlign=top;spacingLeft=14;spacingTop=10;fontFamily=Helvetica;fontSize=13;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="1198" y="424" width="362" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="r-pin" value="Câu chốt: rủi ro không phải “ai được vào module”, mà là “số Tự do có bị viết đè không kiểm soát”." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1A2620;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=18;fontFamily=Helvetica;fontSize=16;fontColor=#F5F7F2;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="568" width="1520" height="52" as="geometry"/>
+        </mxCell>
+        <mxCell id="r-q" value="&lt;b&gt;Hỏi ngược (chọn 2, rồi dừng)&lt;/b&gt;&lt;br&gt;1. Sếp nhìn Tự do theo &lt;b&gt;giá sổ&lt;/b&gt; hay &lt;b&gt;giá sau haircut từng ngân hàng&lt;/b&gt;?&lt;br&gt;2. Một tài sản cha có được cầm cố cấp 2 (second charge) không?&lt;br&gt;3. Định giá lại: khi GT cha giảm dưới Σ con đang cầm cố — chặn, hay cảnh báo + tạo việc định giá?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C3CDC6;align=left;verticalAlign=top;spacingLeft=16;spacingTop=12;fontFamily=Helvetica;fontSize=14;fontColor=#1A2620;" vertex="1" parent="1">
+          <mxGeometry x="40" y="640" width="1520" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="r-foot" value="Trang 3/5  ·  14:00–15:00 trong kịch bản. Không xin IAM. Xóa cứng không nằm trên use case trang 2." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#5A6A62;" vertex="1" parent="1">
+          <mxGeometry x="40" y="852" width="1100" height="24" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

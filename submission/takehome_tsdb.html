@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TSĐB Tự do</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  /* Layout: credit-committee briefing — masthead, formula strip, three requirement sections */
+  :root {
+    --bg: #e8ece6;
+    --paper: #f5f7f2;
+    --ink: #1a2620;
+    --muted: #5a6a62;
+    --line: #c3cdc6;
+    --line-strong: #8a978f;
+    --free: #1b6a48;
+    --free-soft: #d7eee3;
+    --pledged: #3a4760;
+    --pledged-soft: #e2e6ee;
+    --warn: #9b3418;
+    --warn-soft: #f6e2da;
+    --chip: #eef1ea;
+    --shadow: 0 1px 0 rgba(26, 38, 32, 0.06);
+    --display: "Be Vietnam Pro", "Segoe UI", sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121614;
+      --paper: #1b211e;
+      --ink: #e7eee9;
+      --muted: #9aaba2;
+      --line: #33403a;
+      --line-strong: #6b7c74;
+      --free: #6dcaa0;
+      --free-soft: #1c3a2e;
+      --pledged: #9aa8c4;
+      --pledged-soft: #262d3a;
+      --warn: #f0a58a;
+      --warn-soft: #3a221c;
+      --chip: #242b27;
+      --shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #121614;
+    --paper: #1b211e;
+    --ink: #e7eee9;
+    --muted: #9aaba2;
+    --line: #33403a;
+    --line-strong: #6b7c74;
+    --free: #6dcaa0;
+    --free-soft: #1c3a2e;
+    --pledged: #9aa8c4;
+    --pledged-soft: #262d3a;
+    --warn: #f0a58a;
+    --warn-soft: #3a221c;
+    --chip: #242b27;
+    --shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--display);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  button, input, select { font: inherit; color: inherit; }
+  .page {
+    padding-inline: 20px;
+    padding-block: 20px 64px;
+    max-width: 1120px;
+    margin-inline: auto;
+    min-width: 0;
+  }
+  .masthead {
+    display: grid;
+    gap: 8px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 18px;
+  }
+  .kicker {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  h1 {
+    margin: 0;
+    font-size: clamp(1.6rem, 3vw, 2.15rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    text-wrap: balance;
+    line-height: 1.2;
+  }
+  .sub {
+    margin: 0;
+    color: var(--muted);
+    max-width: 62ch;
+  }
+  .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .nav {
+    position: sticky;
+    top: env(safe-area-inset-top, 0px);
+    z-index: 4;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-block: 10px;
+    margin-inline: -4px;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(8px);
+  }
+  .nav a {
+    color: var(--ink);
+    text-decoration: none;
+    border: 1px solid var(--line);
+    background: var(--paper);
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .nav a:hover, .nav a:focus-visible { border-color: var(--ink); }
+  .formula {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    padding: 14px 16px;
+    margin-bottom: 28px;
+  }
+  @media (min-width: 720px) {
+    .formula { grid-template-columns: auto 1fr; align-items: center; }
+  }
+  .formula code {
+    font-family: var(--mono);
+    font-size: 13px;
+    background: var(--free-soft);
+    color: var(--free);
+    padding: 8px 10px;
+    display: block;
+    overflow-x: auto;
+  }
+  section {
+    margin-bottom: 40px;
+    min-width: 0;
+  }
+  h2 {
+    margin: 0 0 8px;
+    font-size: 1.25rem;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+  h3 {
+    margin: 20px 0 8px;
+    font-size: 1rem;
+  }
+  .lede { color: var(--muted); margin: 0 0 16px; max-width: 70ch; }
+  .assumptions {
+    display: grid;
+    gap: 8px;
+    margin: 0 0 16px;
+    padding: 12px 14px;
+    border-left: 3px solid var(--free);
+    background: var(--paper);
+    font-size: 13px;
+  }
+  .assumptions strong { font-weight: 600; }
+  .svg-wrap {
+    overflow-x: auto;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    padding: 12px;
+  }
+  .svg-wrap svg { display: block; max-width: 100%; height: auto; }
+  figcaption {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 8px;
+  }
+  .gates {
+    display: grid;
+    gap: 10px;
+    margin-top: 16px;
+  }
+  @media (min-width: 800px) {
+    .gates { grid-template-columns: 1fr 1fr; }
+  }
+  .gate {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    padding: 12px 14px;
+    min-width: 0;
+  }
+  .gate .tag {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .gate p { margin: 6px 0 0; font-size: 14px; }
+  .screen {
+    background: var(--paper);
+    border: 1px solid var(--line-strong);
+    min-width: 0;
+  }
+  .screen-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px 16px;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--line);
+    font-size: 13px;
+  }
+  .screen-bar strong { font-weight: 600; }
+  .question {
+    padding: 14px 16px 4px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .question em { color: var(--ink); font-style: normal; font-weight: 600; }
+  .kpis {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1px;
+    background: var(--line);
+    margin: 12px 16px 16px;
+    border: 1px solid var(--line);
+  }
+  .kpi {
+    background: var(--paper);
+    padding: 12px;
+    min-width: 0;
+  }
+  .kpi.free { background: var(--free-soft); }
+  .kpi .lbl {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .kpi .num {
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
+    font-size: clamp(1.1rem, 3vw, 1.55rem);
+    font-weight: 600;
+    margin-top: 4px;
+  }
+  .kpi.free .num { color: var(--free); }
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0 16px 12px;
+    align-items: end;
+  }
+  .field {
+    display: grid;
+    gap: 4px;
+    min-width: 0;
+  }
+  .field label {
+    font-size: 11px;
+    font-family: var(--mono);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .field input, .field select {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    padding: 7px 9px;
+    min-width: 0;
+    width: 100%;
+  }
+  .field input:focus, .field select:focus, button:focus-visible {
+    outline: 2px solid var(--free);
+    outline-offset: 1px;
+  }
+  .btn {
+    background: var(--ink);
+    color: var(--bg);
+    border: 0;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  .btn.ghost {
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid var(--line);
+  }
+  .btn:disabled { opacity: 0.45; cursor: not-allowed; }
+  .msg {
+    margin: 0 16px 12px;
+    padding: 8px 10px;
+    font-size: 13px;
+    display: none;
+  }
+  .msg.show { display: block; }
+  .msg.err { background: var(--warn-soft); color: var(--warn); }
+  .msg.ok { background: var(--free-soft); color: var(--free); }
+  .table-wrap { overflow-x: auto; }
+  table.tree {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+    min-width: 640px;
+  }
+  table.tree th {
+    text-align: left;
+    font-weight: 500;
+    color: var(--muted);
+    font-size: 11px;
+    font-family: var(--mono);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--line);
+  }
+  table.tree td {
+    padding: 9px 12px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: middle;
+    font-variant-numeric: tabular-nums;
+  }
+  table.tree td.num, table.tree th.num { text-align: right; font-family: var(--mono); }
+  tr.parent { background: var(--chip); cursor: pointer; }
+  tr.parent:hover { filter: brightness(0.98); }
+  tr.child td:first-child { padding-left: 36px; color: var(--muted); }
+  .exp {
+    display: inline-grid;
+    place-items: center;
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--line-strong);
+    background: var(--paper);
+    font-family: var(--mono);
+    font-size: 12px;
+    margin-right: 8px;
+  }
+  .pill {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 7px;
+    letter-spacing: 0.02em;
+  }
+  .pill.free { background: var(--free-soft); color: var(--free); }
+  .pill.pledged { background: var(--pledged-soft); color: var(--pledged); }
+  .pill.off { background: var(--chip); color: var(--muted); }
+  .locked {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .hint {
+    padding: 10px 16px 14px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 12px;
+    color: var(--muted);
+    padding: 0 16px 12px;
+  }
+  .risk-grid {
+    display: grid;
+    gap: 10px;
+  }
+  @media (min-width: 800px) {
+    .risk-grid { grid-template-columns: 1fr 1fr; }
+  }
+  .risk {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    padding: 14px;
+    min-width: 0;
+  }
+  .risk h3 { margin: 0 0 6px; }
+  .fix-list {
+    margin: 8px 0 0;
+    padding-left: 18px;
+  }
+  .fix-list li { margin-bottom: 6px; }
+  .close {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    padding: 14px 16px;
+    margin-top: 12px;
+  }
+  .notes {
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .notes ol { padding-left: 18px; }
+  @media (max-width: 520px) {
+    .kpis { grid-template-columns: 1fr; }
+    .toolbar .field { flex: 1 1 100%; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="masthead">
+    <div class="kicker">Take-home · BA Fresher · Finance Transformation</div>
+    <h1>Sổ TSĐB Tập đoàn ABC</h1>
+    <p class="sub">Một màn hình để Ban Lãnh đạo trả lời: còn bao nhiêu tài sản bảo đảm <strong>Tự do</strong> để đem đi vay tiếp — không chờ Phòng Tài chính cộng tay trên Excel.</p>
+    <div class="meta-row">
+      <span>Phạm Quang Huy</span>
+      <span>Nộp 06/10/2026</span>
+      <span>Trình bày 10–15 phút · 07/10/2026</span>
+    </div>
+  </header>
+
+  <nav class="nav" aria-label="Ba yêu cầu đề bài">
+    <a href="#luong">1. Luồng quy trình</a>
+    <a href="#manhinh">2. Màn hình phân cấp</a>
+    <a href="#ruiro">3. Rủi ro số liệu</a>
+  </nav>
+
+  <div class="formula" role="note">
+    <span class="kicker">Công thức lãnh đạo</span>
+    <code>Tự do = GT gốc (cha) − Σ GT con đang cầm cố còn hiệu lực</code>
+  </div>
+
+  <div class="assumptions">
+    <strong>Giả định đã khóa cho bài này</strong>
+    Đơn vị tỷ đồng, một loại tiền. Chưa haircut/LTV — số Tự do là sức chứa sổ sách, không phải hạn mức ngân hàng chấp nhận. Con gán “Tự do” là phần chưa thế chấp được ghi nhận, <em>không trừ lần hai</em>. Validation tổng: Σ mọi con (cầm cố + tự do) ≤ GT cha.
+  </div>
+
+  <section id="luong">
+    <h2>1. Luồng tạo cha → con → gán đích</h2>
+    <p class="lede">Bốn cổng chặn trước khi số Tự do lên báo cáo sếp. Luồng sửa/giải chấp/xóa bắt buộc chạy lại cùng công thức — đây là chỗ Excel đang làm sai.</p>
+
+    <figure>
+      <div class="svg-wrap">
+        <svg viewBox="0 0 980 430" role="img" aria-label="Luồng tạo TSĐB cha, tạo con, kiểm tra tổng không vượt cha, rồi tính lại Tự do. Nhánh từ chối đi xuống. Sửa, giải chấp, xóa quay lại bước tính lại.">
+          <defs>
+            <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+              <path d="M0 0 L10 5 L0 10 z" fill="currentColor"/>
+            </marker>
+          </defs>
+          <g fill="none" stroke="currentColor" stroke-width="1.4">
+            <rect x="20" y="48" width="150" height="56" rx="0"/>
+            <rect x="210" y="40" width="150" height="72" rx="0"/>
+            <path d="M400 76 l46 -36 l46 36 l-46 36 z"/>
+            <rect x="530" y="48" width="150" height="56"/>
+            <path d="M720 76 l46 -36 l46 36 l-46 36 z"/>
+            <rect x="850" y="48" width="110" height="56"/>
+
+            <line x1="170" y1="76" x2="210" y2="76" marker-end="url(#arr)"/>
+            <line x1="360" y1="76" x2="400" y2="76" marker-end="url(#arr)"/>
+            <line x1="492" y1="76" x2="530" y2="76" marker-end="url(#arr)"/>
+            <line x1="680" y1="76" x2="720" y2="76" marker-end="url(#arr)"/>
+            <line x1="812" y1="76" x2="850" y2="76" marker-end="url(#arr)"/>
+
+            <path d="M446 112 L446 168 L285 168 L285 196" marker-end="url(#arr)"/>
+            <path d="M766 112 L766 168 L600 168 L600 196" marker-end="url(#arr)"/>
+            <path d="M905 104 L905 196" marker-end="url(#arr)"/>
+
+            <rect x="200" y="196" width="170" height="50"/>
+            <rect x="515" y="196" width="170" height="50"/>
+            <rect x="830" y="196" width="130" height="50"/>
+
+            <path d="M285 246 L285 292 L490 292" marker-end="url(#arr)"/>
+            <path d="M600 246 L600 268 L490 268 L490 292" />
+            <path d="M895 246 L895 320 L80 320 L80 360" marker-end="url(#arr)"/>
+
+            <rect x="20" y="360" width="200" height="48"/>
+            <rect x="260" y="360" width="200" height="48"/>
+            <rect x="500" y="292" width="220" height="48"/>
+            <line x1="220" y1="384" x2="260" y2="384" marker-end="url(#arr)"/>
+            <line x1="460" y1="384" x2="500" y2="316" marker-end="url(#arr)"/>
+            <path d="M720 316 L790 316 L790 76 L850 76" marker-end="url(#arr)"/>
+          </g>
+          <g fill="currentColor" font-family="Be Vietnam Pro, sans-serif" font-size="12">
+            <text x="95" y="74" text-anchor="middle" font-weight="600">Tạo nhóm cha</text>
+            <text x="95" y="90" text-anchor="middle" font-size="10">Mã, loại, GT gốc</text>
+            <text x="285" y="70" text-anchor="middle" font-weight="600">Lưu cha</text>
+            <text x="285" y="86" text-anchor="middle" font-size="10">Tự do ban đầu = GT gốc</text>
+            <text x="446" y="80" text-anchor="middle" font-size="11">GT&gt;0</text>
+            <text x="446" y="94" text-anchor="middle" font-size="11">mã unique?</text>
+            <text x="605" y="74" text-anchor="middle" font-weight="600">Tạo TSĐB con</text>
+            <text x="605" y="90" text-anchor="middle" font-size="10">GT phân bổ + đích</text>
+            <text x="766" y="80" text-anchor="middle" font-size="11">Đích?</text>
+            <text x="905" y="74" text-anchor="middle" font-weight="600">Σ con</text>
+            <text x="905" y="90" text-anchor="middle" font-size="11">≤ GT cha?</text>
+            <text x="285" y="218" text-anchor="middle" font-size="11">Từ chối lưu cha</text>
+            <text x="285" y="234" text-anchor="middle" font-size="10">Báo thiếu GT / trùng mã</text>
+            <text x="600" y="218" text-anchor="middle" font-size="11">Từ chối lưu con</text>
+            <text x="600" y="234" text-anchor="middle" font-size="10">Thiếu NH+HĐ hoặc Tự do</text>
+            <text x="895" y="218" text-anchor="middle" font-size="11">Chặn — vượt sức chứa</text>
+            <text x="895" y="234" text-anchor="middle" font-size="10">Hiện phần vượt, Tự do không âm</text>
+            <text x="120" y="380" text-anchor="middle" font-size="11">Sửa / Giải chấp / Ngưng</text>
+            <text x="120" y="396" text-anchor="middle" font-size="10">Không xóa cứng cầm cố</text>
+            <text x="360" y="380" text-anchor="middle" font-size="11">Nhật ký trước–sau</text>
+            <text x="360" y="396" text-anchor="middle" font-size="10">User, lúc, GT cũ → mới</text>
+            <text x="610" y="312" text-anchor="middle" font-weight="600">Tính lại Tự do (field hệ thống)</text>
+            <text x="610" y="328" text-anchor="middle" font-size="10">Rồi mới lên báo cáo sếp</text>
+          </g>
+          <g fill="currentColor" font-size="10" font-family="IBM Plex Mono, monospace" opacity="0.7">
+            <text x="20" y="28">HAPPY PATH</text>
+          </g>
+        </svg>
+      </div>
+      <figcaption>Hình 1. Cổng 3 (Σ con ≤ cha) giữ Tự do không âm. Mọi thay đổi sau đó phải quay về bước tính lại — không sửa tay ô Tự do.</figcaption>
+    </figure>
+
+    <div class="gates">
+      <article class="gate">
+        <div class="tag">Cổng 1 · Cha</div>
+        <p>GT gốc &gt; 0, mã không trùng. Lưu xong Tự do = GT gốc. Thiếu ngày định giá thì cảnh báo, chưa chặn — để Finance bổ sung sau.</p>
+      </article>
+      <article class="gate">
+        <div class="tag">Cổng 2 · Đích của con</div>
+        <p>Bắt buộc chọn <strong>Ngân hàng + số HĐ vay</strong> hoặc <strong>Tự do</strong>. Thiếu số HĐ thì chưa phải cầm cố — không được làm Tự do giảm.</p>
+      </article>
+      <article class="gate">
+        <div class="tag">Cổng 3 · Sức chứa</div>
+        <p>Σ GT mọi con ≤ GT cha. Vượt → chặn lưu, nêu phần vượt. Không cho Tự do âm trên báo cáo.</p>
+      </article>
+      <article class="gate">
+        <div class="tag">Cổng 4 · Recalc</div>
+        <p>Sửa GT, giải chấp, ngưng hiệu lực đều chạy lại công thức + ghi nhật ký. Tự do là field tính, không có ô nhập.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="manhinh">
+    <h2>2. Màn hình bảng phân cấp</h2>
+    <p class="lede">Thu gọn: sếp thấy Tổng gốc và Tự do từng nhóm cha. Mở rộng: thấy con đang cầm cố cho ngân hàng / HĐ nào. Bấm thử gán thêm một khoản — hệ thống chặn nếu vượt sức chứa.</p>
+
+    <div class="screen" id="register">
+      <div class="screen-bar">
+        <strong>Tập đoàn ABC · Module Quản lý TSĐB</strong>
+        <span class="locked">Ô Tự do khóa — hệ thống tính</span>
+      </div>
+      <p class="question">Câu hỏi lãnh đạo: <em>Hiện còn bao nhiêu tài sản Tự do để đem đi vay tiếp?</em></p>
+      <div class="kpis">
+        <div class="kpi">
+          <div class="lbl">Tổng GT gốc</div>
+          <div class="num" id="kpiGoc">0 tỷ</div>
+        </div>
+        <div class="kpi">
+          <div class="lbl">Đã cầm cố</div>
+          <div class="num" id="kpiCamCo">0 tỷ</div>
+        </div>
+        <div class="kpi free">
+          <div class="lbl">Tự do để vay tiếp</div>
+          <div class="num" id="kpiTuDo">0 tỷ</div>
+        </div>
+      </div>
+      <div class="legend">
+        <span>Thu gọn = số cha</span>
+        <span>Mở rộng = HĐ cầm cố</span>
+        <span class="pill free">Tự do</span>
+        <span class="pill pledged">Cầm cố</span>
+      </div>
+      <div class="toolbar">
+        <div class="field">
+          <label for="filterType">Loại tài sản</label>
+          <select id="filterType">
+            <option value="all">Tất cả</option>
+            <option value="BĐS">BĐS</option>
+            <option value="Cổ phiếu">Cổ phiếu</option>
+            <option value="Tiền gửi">Tiền gửi</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="parentPick">Gán thêm con vào</label>
+          <select id="parentPick"></select>
+        </div>
+        <div class="field">
+          <label for="childAmt">GT con (tỷ)</label>
+          <input id="childAmt" type="number" min="0.1" step="0.1" value="50">
+        </div>
+        <div class="field">
+          <label for="destPick">Đích</label>
+          <select id="destPick">
+            <option value="bank">Ngân hàng / HĐ vay</option>
+            <option value="free">Tự do</option>
+          </select>
+        </div>
+        <div class="field" id="bankField">
+          <label for="bankName">Ngân hàng + HĐ</label>
+          <input id="bankName" value="VietinBank / HĐ-CTG-009">
+        </div>
+        <button class="btn" id="btnAdd" type="button">Gán con</button>
+        <button class="btn ghost" id="btnReset" type="button">Số liệu mẫu</button>
+      </div>
+      <div class="msg err" id="msgErr" role="alert"></div>
+      <div class="msg ok" id="msgOk" role="status"></div>
+      <div class="table-wrap">
+        <table class="tree">
+          <thead>
+            <tr>
+              <th>Nhóm / Hợp đồng</th>
+              <th>Loại</th>
+              <th class="num">GT gốc / phân bổ</th>
+              <th class="num">Cầm cố</th>
+              <th class="num">Tự do</th>
+              <th>Trạng thái</th>
+            </tr>
+          </thead>
+          <tbody id="treeBody"></tbody>
+        </table>
+      </div>
+      <p class="hint">Số liệu mẫu theo đề: lô đất 100 tỷ → VCB 40 + BIDV 30 = còn 30 tỷ tự do. Thử gán thêm 50 tỷ vào lô đất (còn 30) để thấy cổng 3 chặn.</p>
+    </div>
+  </section>
+
+  <section id="ruiro">
+    <h2>3. Rủi ro khi mọi user đều Xem / Thêm / Sửa / Xóa</h2>
+    <p class="lede">Đề khóa constraint “không phân quyền”. Em không phản đối suông — nhận constraint, chỉ ra lỗ hổng làm <strong>sai số Tự do trên báo cáo sếp</strong>, rồi đề xuất kiểm soát trên dữ liệu, không cần IAM đầy đủ.</p>
+
+    <div class="risk-grid">
+      <article class="risk">
+        <h3>Xóa cứng con đang cầm cố</h3>
+        <p>Tự do tăng ảo. Sếp tưởng còn tài sản, thế chấp trùng cho ngân hàng khác.</p>
+      </article>
+      <article class="risk">
+        <h3>Sửa GT cha giảm hoặc GT con tăng</h3>
+        <p>Bỏ qua cổng 3 → Tự do âm hoặc vượt sức chứa. Báo cáo không còn cộng được.</p>
+      </article>
+      <article class="risk">
+        <h3>Sửa tay ô Tự do</h3>
+        <p>Mất single source of truth. Hai dashboard, hai số — đúng bệnh Excel hiện tại.</p>
+      </article>
+      <article class="risk">
+        <h3>Hai người sửa cùng lúc / không nhật ký</h3>
+        <p>Cộng hai HĐ hoặc mất một HĐ. Khi sếp hỏi “số này từ đâu” không trả lời được.</p>
+      </article>
+    </div>
+
+    <h3>Cách xử lý đơn giản (bốn kiểm soát, không cần phân quyền phức tạp)</h3>
+    <ol class="fix-list">
+      <li><strong>Tự do là field tính, khóa nhập.</strong> Mọi màn hình và báo cáo sếp đọc cùng một công thức. Đây là kiểm soát rẻ nhất, chặn được rủi ro lớn nhất.</li>
+      <li><strong>Cấm xóa cứng bản ghi cầm cố.</strong> Chỉ Giải chấp / Ngưng hiệu lực, bắt buộc nhập lý do. Dòng con vẫn còn để đối soát với ngân hàng.</li>
+      <li><strong>Nhật ký trước–sau</strong> trên mọi Thêm / Sửa / Giải chấp: ai, lúc nào, GT cũ → GT mới, HĐ nào. Không phân quyền nhưng không ẩn danh.</li>
+      <li><strong>Chốt số báo cáo sếp (snapshot cuối ngày).</strong> Thao tác vận hành trong ngày không tự sửa gói đã gửi lãnh đạo. Nếu Finance đồng ý: thêm 1 bước maker–checker (user nhập, Kế toán trưởng duyệt mới vào snapshot) — vẫn chưa phải ma trận quyền.</li>
+    </ol>
+
+    <div class="close">
+      <strong>Câu chốt.</strong> Rủi ro không phải “ai được vào module”, mà là “số Tự do có bị viết đè không kiểm soát”. Khóa field tính + cấm xóa cứng + nhật ký + snapshot là đủ để số sếp không lệch, dù đề bài chưa cho phân quyền.
+    </div>
+  </section>
+
+  <section>
+    <h2>Kịch bản 10–15 phút</h2>
+    <div class="notes">
+      <ol>
+        <li>0–1 phút: as-is Excel vs. một con số Tự do hệ thống tính.</li>
+        <li>1–5 phút: bốn cổng trên flowchart. Nhấn: luồng sửa/xóa mới làm sai số sếp.</li>
+        <li>5–10 phút: thu gọn / mở BĐS / thử gán 50 tỷ bị chặn. Chỉ cột Tự do không có ô nhập.</li>
+        <li>10–14 phút: bốn rủi ro + bốn kiểm soát. Không xin IAM.</li>
+        <li>14–15 phút: hỏi ngược — Tự do theo giá sổ hay sau haircut? Cầm cố cấp 2? Khi định giá lại GT cha &lt; Σ con thì chặn hay cảnh báo?</li>
+      </ol>
+    </div>
+  </section>
+</div>
+
+<script>
+(function () {
+  const UNIT = " tỷ";
+  const seed = () => ([
+    {
+      id: "bds-q7",
+      type: "BĐS",
+      name: "Lô đất Khu Nam Q.7",
+      code: "TS-BDS-001",
+      value: 100,
+      open: true,
+      children: [
+        { id: "c1", name: "Thế chấp Vietcombank", value: 40, dest: "bank", bank: "Vietcombank", contract: "HĐ-VCB-001", status: "active" },
+        { id: "c2", name: "Thế chấp BIDV", value: 30, dest: "bank", bank: "BIDV", contract: "HĐ-BIDV-002", status: "active" }
+      ]
+    },
+    {
+      id: "cp-vnm",
+      type: "Cổ phiếu",
+      name: "Cổ phiếu VNM · 2.1 triệu CP",
+      code: "TS-CP-014",
+      value: 20,
+      open: false,
+      children: [
+        { id: "c3", name: "Thế chấp Techcombank", value: 15, dest: "bank", bank: "Techcombank", contract: "HĐ-TCB-118", status: "active" }
+      ]
+    },
+    {
+      id: "tg-ctg",
+      type: "Tiền gửi",
+      name: "HĐ tiền gửi VietinBank",
+      code: "TS-TG-007",
+      value: 20,
+      open: false,
+      children: [
+        { id: "c4", name: "Cầm cố HĐTG", value: 5, dest: "bank", bank: "VietinBank", contract: "HĐ-CTG-TG-07", status: "active" }
+      ]
+    }
+  ]);
+
+  let parents = seed();
+
+  function pledgedOf(p) {
+    return p.children
+      .filter((c) => c.dest === "bank" && c.status === "active")
+      .reduce((s, c) => s + c.value, 0);
+  }
+  function sumChildren(p) {
+    return p.children.filter((c) => c.status !== "released").reduce((s, c) => s + c.value, 0);
+  }
+  function freeOf(p) {
+    return Math.round((p.value - pledgedOf(p)) * 10) / 10;
+  }
+  function fmt(n) {
+    const v = Math.round(n * 10) / 10;
+    return v.toLocaleString("vi-VN") + UNIT;
+  }
+
+  function show(el, text, on) {
+    el.textContent = text;
+    el.classList.toggle("show", on);
+  }
+
+  function persistOpen() {
+    try {
+      const map = {};
+      parents.forEach((p) => { map[p.id] = p.open; });
+      localStorage.setItem("tsdb-open", JSON.stringify(map));
+    } catch (e) { /* private window / blocked storage */ }
+  }
+  function restoreOpen() {
+    try {
+      const raw = localStorage.getItem("tsdb-open");
+      if (!raw) return;
+      const map = JSON.parse(raw);
+      parents.forEach((p) => {
+        if (typeof map[p.id] === "boolean") p.open = map[p.id];
+      });
+    } catch (e) { /* ignore */ }
+  }
+
+  function totals() {
+    const type = document.getElementById("filterType").value;
+    const rows = parents.filter((p) => type === "all" || p.type === type);
+    const goc = rows.reduce((s, p) => s + p.value, 0);
+    const cam = rows.reduce((s, p) => s + pledgedOf(p), 0);
+    return { goc, cam, free: goc - cam, rows };
+  }
+
+  function fillParentSelect() {
+    const sel = document.getElementById("parentPick");
+    const keep = sel.value;
+    sel.innerHTML = parents.map((p) => {
+      const cap = Math.round((p.value - sumChildren(p)) * 10) / 10;
+      return `<option value="${p.id}">${p.code} · còn chứa ${cap}${UNIT}</option>`;
+    }).join("");
+    if ([...sel.options].some((o) => o.value === keep)) sel.value = keep;
+  }
+
+  function render() {
+    const { goc, cam, free, rows } = totals();
+    document.getElementById("kpiGoc").textContent = fmt(goc);
+    document.getElementById("kpiCamCo").textContent = fmt(cam);
+    document.getElementById("kpiTuDo").textContent = fmt(free);
+    fillParentSelect();
+
+    const body = document.getElementById("treeBody");
+    body.innerHTML = "";
+    rows.forEach((p) => {
+      const camCo = pledgedOf(p);
+      const tuDo = freeOf(p);
+      const tr = document.createElement("tr");
+      tr.className = "parent";
+      tr.dataset.id = p.id;
+      tr.innerHTML = `
+        <td><span class="exp" aria-hidden="true">${p.open ? "−" : "+"}</span>${p.name}<div class="locked">${p.code}</div></td>
+        <td>${p.type}</td>
+        <td class="num">${fmt(p.value)}</td>
+        <td class="num">${fmt(camCo)}</td>
+        <td class="num" style="color:var(--free);font-weight:600">${fmt(tuDo)}</td>
+        <td><span class="pill free">Tự do ${fmt(tuDo)}</span></td>`;
+      tr.addEventListener("click", () => {
+        p.open = !p.open;
+        persistOpen();
+        render();
+      });
+      body.appendChild(tr);
+      if (!p.open) return;
+      p.children.forEach((c) => {
+        const cr = document.createElement("tr");
+        cr.className = "child";
+        const isPledged = c.dest === "bank" && c.status === "active";
+        const label = isPledged
+          ? `${c.bank} · ${c.contract}`
+          : c.dest === "free"
+            ? "Phần ghi nhận Tự do (không trừ lần hai)"
+            : c.name;
+        const pill = c.status === "released"
+          ? '<span class="pill off">Đã giải chấp</span>'
+          : isPledged
+            ? '<span class="pill pledged">Cầm cố</span>'
+            : '<span class="pill free">Tự do</span>';
+        cr.innerHTML = `
+          <td>${label}</td>
+          <td></td>
+          <td class="num">${fmt(c.value)}</td>
+          <td class="num">${isPledged ? fmt(c.value) : "—"}</td>
+          <td class="num">${c.dest === "free" ? fmt(c.value) : "—"}</td>
+          <td>${pill}</td>`;
+        body.appendChild(cr);
+      });
+    });
+  }
+
+  function addChild() {
+    const err = document.getElementById("msgErr");
+    const ok = document.getElementById("msgOk");
+    show(err, "", false);
+    show(ok, "", false);
+
+    const pid = document.getElementById("parentPick").value;
+    const p = parents.find((x) => x.id === pid);
+    const amt = Number(document.getElementById("childAmt").value);
+    const dest = document.getElementById("destPick").value;
+    const bankRaw = document.getElementById("bankName").value.trim();
+
+    if (!p) {
+      show(err, "Chưa chọn nhóm cha.", true);
+      return;
+    }
+    if (!(amt > 0)) {
+      show(err, "GT con phải > 0.", true);
+      return;
+    }
+    if (dest === "bank" && !bankRaw) {
+      show(err, "Cổng 2: cầm cố phải có Ngân hàng + số HĐ vay. Thiếu HĐ thì chưa được trừ Tự do.", true);
+      return;
+    }
+    const nextSum = sumChildren(p) + amt;
+    if (nextSum - p.value > 0.0001) {
+      const overflow = Math.round((nextSum - p.value) * 10) / 10;
+      const cap = Math.round((p.value - sumChildren(p)) * 10) / 10;
+      show(err, `Cổng 3 chặn: Σ con sẽ = ${fmt(nextSum)}, vượt GT cha ${fmt(p.value)} (vượt ${fmt(overflow)}). Sức chứa còn ${fmt(cap)}. Tự do trên báo cáo sếp không đổi.`, true);
+      return;
+    }
+
+    let bank = "Ngân hàng";
+    let contract = "HĐ-…";
+    if (dest === "bank") {
+      const parts = bankRaw.split("/").map((s) => s.trim());
+      bank = parts[0] || bankRaw;
+      contract = parts[1] || bankRaw;
+    }
+    p.children.push({
+      id: "n" + Date.now(),
+      name: dest === "free" ? "Phần Tự do" : "Thế chấp " + bank,
+      value: amt,
+      dest,
+      bank,
+      contract,
+      status: "active"
+    });
+    p.open = true;
+    persistOpen();
+    render();
+    const note = dest === "free"
+      ? `Đã ghi nhận ${fmt(amt)} Tự do trên ${p.code}. Công thức lãnh đạo không trừ lần hai. Tự do tính = ${fmt(freeOf(p))}.`
+      : `Đã cầm cố ${fmt(amt)} (${bank} · ${contract}). Tự do ${p.code} còn ${fmt(freeOf(p))}.`;
+    show(ok, note, true);
+  }
+
+  document.getElementById("destPick").addEventListener("change", (e) => {
+    document.getElementById("bankField").hidden = e.target.value === "free";
+  });
+  document.getElementById("filterType").addEventListener("change", render);
+  document.getElementById("btnAdd").addEventListener("click", addChild);
+  document.getElementById("btnReset").addEventListener("click", () => {
+    parents = seed();
+    restoreOpen();
+    document.getElementById("msgErr").classList.remove("show");
+    document.getElementById("msgOk").classList.remove("show");
+    render();
+  });
+
+  restoreOpen();
+  render();
+})();
+</script>
+</body>
+</html>
